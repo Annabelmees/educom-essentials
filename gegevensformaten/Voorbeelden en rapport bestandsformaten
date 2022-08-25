@@ -1,0 +1,224 @@
+# Markdown
+    Voorbeeld I:
+__Advertisement :)__
+
+- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image resize in browser.
+- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly i18n with plurals support and easy syntax.
+
+You will like those projects!
+
+    Informatie: 
+Markdown dicteert de opmaak van simpele platte tekst; koppen, gescheiden alinea's, tekst opmaak, etc.
+        - "Advertisement :)" is vet
+        - "pica" is vet
+        - "babelfish" is vet
+        - "pica" is een link
+        - "babelfish" is een link
+        - "__[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image resize in browser." en 
+          "__[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly i18n with plurals support and easy syntax." 
+          zijn opsommingen
+
+    Voorbeeld II:
+#### The quarterly results look great!
+
+- Revenue was off the chart.
+- Profits were higher than ever.
+
+  *Everything* is going according to **plan**.
+
+    Informatie:
+    - "The quarterly results look great!" is een kop 4
+    - "Revenue was off the chart." en "Profits were higher than ever." zijn opsommingen
+    - "Everything" is schuin
+    - "plan" is vet
+
+# JSON
+    Voorbeeld I:
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+
+   Informatie:
+JSON is een tekst-gebaseerde manier om objects en arrays op een makkelijk leesbare manier te noteren 
+   - De code is an object-initialiser; wat betekent dat de expressie een initializatie van een object beschrijft 
+
+    Voorbeeld II:
+{"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}
+
+    Informatie:
+    - Onder "menu" bevinden zich "id", "value", en "popup"
+    - "{"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}" is een array-initialiser; wat betekent dat de expressie een initializatie van een array beschrijft
+
+# XML
+    Voorbeeld I:
+<widget>
+    <debug>on</debug>
+    <window title="Sample Konfabulator Widget">
+        <name>main_window</name>
+        <width>500</width>
+        <height>500</height>
+    </window>
+    <image src="Images/Sun.png" name="sun1">
+        <hOffset>250</hOffset>
+        <vOffset>250</vOffset>
+        <alignment>center</alignment>
+    </image>
+    <text data="Click Here" size="36" style="bold">
+        <name>text1</name>
+        <hOffset>250</hOffset>
+        <vOffset>100</vOffset>
+        <alignment>center</alignment>
+        <onMouseUp>
+            sun1.opacity = (sun1.opacity / 100) * 90;
+        </onMouseUp>
+    </text>
+</widget>
+
+    Informatie:
+  XMl beschrijft data op een wat complexere manier dan JSON; gebruikt om data over te dragen ipv te tonen
+    - De code bevat informatie over dingen als window opmaak, tekst opmaak, en images 
+
+    Voorbeeld II:
+<menu>
+    <header>Adobe SVG Viewer</header>
+    <item action="Open" id="Open">Open</item>
+    <item action="OpenNew" id="OpenNew">Open New</item>
+    <separator/>
+    <item action="ZoomIn" id="ZoomIn">Zoom In</item>
+    <item action="ZoomOut" id="ZoomOut">Zoom Out</item>
+    <item action="OriginalView" id="OriginalView">Original View</item>
+    <separator/>
+    <item action="Quality" id="Quality">Quality</item>
+    <item action="Pause" id="Pause">Pause</item>
+    <item action="Mute" id="Mute">Mute</item>
+    <separator/>
+    <item action="Find" id="Find">Find...</item>
+    <item action="FindAgain" id="FindAgain">Find Again</item>
+    <item action="Copy" id="Copy">Copy</item>
+    <item action="CopyAgain" id="CopyAgain">Copy Again</item>
+    <item action="CopySVG" id="CopySVG">Copy SVG</item>
+    <item action="ViewSVG" id="ViewSVG">View SVG</item>
+    <item action="ViewSource" id="ViewSource">View Source</item>
+    <item action="SaveAs" id="SaveAs">Save As</item>
+    <separator/>
+    <item action="Help" id="Help">Help</item>
+    <item action="About" id="About">About Adobe CVG Viewer...</item>
+</menu>
+   
+    Informatie:
+    - Deze code stelt een menu van een document in Adobe SVG Viewer voor
+    - De code bevat in totaal 18 items die een actie uitvoeren wanneer aangeklikt
+    - Er zijn 5 subgroepen binnen het menu
+
+
+# SVG
+    Voorbeeld I:
+<svg height="210" width="500">
+  <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;"/>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+    Informatie:
+SVG is een vectorbestand; het maakt images die oneindig geschaald kunnen worden
+    - De tekening is 210 hoog en 500 breed
+    - De vorm is lime gekleurd, gevuld
+    - De omlijning van de vorm is 5 wijd
+    - De omlijning van de vorm is paars gekleurd 
+    - De polygon points maken de vorm een ster
+
+    Voorbeeld II:
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+    Informatie:
+    - De tekening is 180 hoog en 400 breed
+    - De vorm is rood gekleurd, gevuld
+    - De omlijning van de vorm is 5 wijd
+    - De omlijning van de vorm is zwart gekleurd
+
+#  YAML
+    Voorbeeld I:
+name: Martin D'vloper
+job: Developer
+skill: Elite
+employed: True
+foods:
+  - Apple
+  - Orange
+  - Strawberry
+  - Mango
+languages:
+  perl: Elite
+  python: Elite
+  pascal: Lame
+education: |
+  4 GCSEs
+  3 A-Levels
+  BSc in the Internet of Things
+    
+    Informatie:
+YAML houdt zich bezig met data en wordt veel gebruikt in configuratie; data wordt geordend in een hierarchy. 
+    - "Apple", "Orange", "Strawberry", en "Mango" behoren tot een lijst van "foods" 
+    - "4 GCSEs, 3 A-Levels, BSc in the Internet of Things" is een multi-line string 
+    - Er zijn drie collecties; lijnen met een indent waarvan de onderdelen tot dezelfde groep behoren
+    - "Martin D'vloper" is wel "employed" 
+    - "Martin D-vloper" is geclassificeerd als "Elite" in skill
+    - "Martin D'vloper" is geclassificeerd als "Elite" in "perl" en "python"en "Lame" in "pascal"
+
+    Voorbeeld II:
+ doe: "a deer, a female deer"
+ ray: "a drop of golden sun"
+ pi: 3.14159
+ xmas: true
+ french-hens: 3
+ calling-birds:
+   - huey
+   - dewey
+   - louie
+   - fred
+ xmas-fifth-day:
+   calling-birds: four
+   french-hens: 3
+   golden-rings: 5
+   partridges:
+     count: 1
+     location: "a pear tree"
+   turtle-doves: two
+    
+    Informatie:
+    - "pi" is gelijk aan "3.14159"
+    - "huey", "dewey", "louie", en "fred" behoren allemaal tot "calling-birds'
+    
